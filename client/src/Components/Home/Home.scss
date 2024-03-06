@@ -1,0 +1,138 @@
+@import '../../App.scss';
+
+
+.home_main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    // background-image: url("../../../public/backgroundMain.jpeg");
+    background-image: url("../../../public/backgroundImage.webp");
+    background-size: cover;
+    display: flex;
+
+    .home_left{
+        width:50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .home_left_upper{
+            color: $primary_font_color;
+            height: 40%;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                font-size: 4em;
+                width: 80%;
+            }
+        }
+
+        .home_left_lower{
+            color: white;
+            border-radius: 20px;
+            box-sizing: border-box;
+            border: 2px solid $primary_font_color;
+            height: 40%;
+            width:60%;
+            background-image: url("../../../public/connect_card_background.jpeg");
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p:nth-child(1){
+                color: black;
+                font-size: 2em;
+                height: 45%;
+                width: 80%;
+            }
+
+            p:nth-child(2){
+                color: black;
+                height: 15%;
+                font-size: 0.8em;
+                font-weight: bold;
+            }
+
+            button{
+                height: 15%;
+                width: 50%;
+                border-radius: 10px;
+                border: none;
+                background-color: coral;
+                font-size: 1em;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .home_right{
+        width:50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .home_right_form{
+            width: 70%;
+            height: 70%;
+            margin-top: 50px;
+            background-color: #423f3f;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+
+            p:nth-child(1){
+                color:$primary_font_color ;
+                height: 4%;
+            }
+
+            p:nth-child(2){
+                width: 85%;
+                margin-top: 15px;
+                color:$primary_font_color ;
+                height: 8%;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin-top: 25px;
+                height: 70%;
+
+                input{
+                    height: 25%;
+                    margin-bottom: 25px;
+                    border-radius: 10px;
+                    border: none;
+                    padding-left: 25px;
+                    background-color: $primary_font_color;
+                    color: black;
+                }
+
+                button{
+                    height: 25%;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: coral;
+                    font-size: 1.2em;
+                    cursor: pointer;
+                }
+
+                input:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+
+
+}
